@@ -1,1 +1,1 @@
-![Churn](https://imgur.com/a/C6JgFBS)
+![Imgur](https://i.imgur.com/1l4jsdg.jpg)
