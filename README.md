@@ -40,7 +40,7 @@ I tuned and cross-validated the XGBoost model and then honed in on an optimal de
   
 ## Findings  
   
-Since logistic regression performed nearly as well as XGBoost, it's not unreasonable to rely on its well-known and valuable attribute of feature importances. 
+Since logistic regression performed nearly as well as XGBoost, it's not unreasonable to rely on its well-known and valuable feature importances attribute. 
 
 ![Imgur](https://i.imgur.com/S7PkFRy.png)  
 
