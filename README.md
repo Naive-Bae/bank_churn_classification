@@ -34,7 +34,7 @@ I ran the data through six different classification algorithms to see which perf
 
 ![Imgur](https://i.imgur.com/KPMw6qv.png)  
   
-I tuned and cross-validated the XGBoost model and then honed in on an optimal decision threshold. Recall is more important to our business case, since exited customers are very valuable to us (91,000 euros on average), so I set the F-beta to 1.5. That proved to be a little too insensitive to precision, so I decided on a final threshold of 27%, which yielded a recall of 70%. In other words, if a customer is determined by this algorithm to have a 27% chance or greater of leaving the bank, they should be flagged for interventional measures, and by setting the threshold at 27%, we can expect to successfully identify 70% of all of the people who will actually leave the bank.  
+I tuned and cross-validated the XGBoost model and then honed in on an optimal decision threshold. Recall is more important to our business case, since exited customers are very valuable to us (91,000 euros on average), so I set the F-beta to 1.5. That proved to be a little too insensitive to precision, so I decided on a final threshold of 27%, which yielded a recall of 70%. In other words, if a customer is determined by this algorithm to have a 27% chance or greater of leaving the bank, they should be flagged for interventional measures, and by setting the threshold at 27%, we can expect to successfully identify 70% of all of the people who will actually leave the bank barring intervention.   
   
 ![Imgur](https://i.imgur.com/oPbWkuL.png)
   
