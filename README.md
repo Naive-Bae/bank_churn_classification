@@ -34,7 +34,7 @@ I ran the data through six different classification algorithms to see which perf
 
 ![Imgur](https://i.imgur.com/KPMw6qv.png)  
   
-I tuned and cross-validated the XGBoost model and then honed in on an optimal decision threshold. Recall is more important to our business case, since exited customers are very valuable to us (91,000 euros), so I set the F-beta to 1.5. That proved to be a little too insensitive to precision, so I decided on a final threshold of 27%, which yielded a recall of 70%.  
+I tuned and cross-validated the XGBoost model and then honed in on an optimal decision threshold. Recall is more important to our business case, since exited customers are very valuable to us (91,000 euros on average), so I set the F-beta to 1.5. That proved to be a little too insensitive to precision, so I decided on a final threshold of 27%, which yielded a recall of 70%. In other words, if a customer is determined by this algorithm have a 27% chance or greater of leaving the bank, they should be flagged for interventional measures.     
   
 ![Imgur](https://i.imgur.com/oPbWkuL.png)
   
@@ -55,7 +55,7 @@ We can see that as customers advance in age, they become much more likely to lea
   
 ## Recommendations  
   
-A caveat that we should point out is that, to someone from the U.S., it may be tempting to assume that a primary investment consideration for a person entering their 40s might be college education saving for children, however, we must remember that higher education in these countries are much more affordable because there are an abundance of publicly funded options. Therefore, it's reasonable to assume that college savings don’t make up as much of a person’s invested capital. As such, the bank should probably focus on other products, such as retirement products.
+A caveat that we should point out is that, to someone from the U.S., it may be tempting to assume that a primary investment consideration for a person entering their 40s might be college education saving for children, however, we must remember that higher education in these countries is much more affordable because there is an abundance of publicly funded options. Therefore, it's reasonable to assume that college savings don’t make up as much of a person’s invested capital. As such, the bank should probably focus on other products, such as retirement products.
 
 * Review competitiveness of rates and robustness of product offerings, especially for retirement products  
 * Offer reduced fees to customers 40 and over, perhaps on a sliding scale  
