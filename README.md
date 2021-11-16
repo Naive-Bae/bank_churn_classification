@@ -30,7 +30,7 @@ The data comes from [Kaggle](https://www.kaggle.com/sonalidasgupta95/churn-predi
 
 Since the data set includes customers who have churned, the objective is to determine whether there are commonalities that are  relatively unique to the set of exited customers (i.e. factors that are shared by exited customers, but not by existing customers). The test would entail running new customers through the algorithm to classify each as "churn" or "stay." By adjusting the classification threshold, we can determine which customers we want to target for retention measures.  
   
-I ran the data through six different classification algorithms to see which performed best. The two optimal ones were XGBoost and Logistic Regression.  
+I ran the data through six different classification algorithms to see which performed best. The two optimal ones were XGBoost and Logistic Regression. The metric used to make this assessment was area under the receiver operating characteristic curve (AUC). This metric is defined as the area under the graph of sensitivity (1-specificity) across different thresholds of probabilities of prediciting an event. Simply stated, your AUC is the probabililty that a randomly selected observation from the positive class will be assigned by the model a higher probability of being positive than would be assigned to a randomly selected observation from the negative class.
 
 ![Imgur](https://i.imgur.com/KPMw6qv.png)  
   
